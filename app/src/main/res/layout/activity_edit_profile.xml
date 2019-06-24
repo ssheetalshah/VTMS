@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E4B7E">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#1E4B7E">
+
+            <EditText
+                android:id="@+id/uName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="#1E4B7E"
+                android:textSize="13dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#1E4B7E">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Id"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="#1E4B7E"
+                android:textSize="13dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#1E4B7E"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#1E4B7E">
+
+            <EditText
+                android:id="@+id/uPasssword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#1E4B7E"
+                android:textSize="13dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textColorHint="#1E4B7E">
+
+            <EditText
+                android:id="@+id/uMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile No."
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="#1E4B7E"
+                android:textSize="13dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/bt_Upd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/btshape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+</LinearLayout>
